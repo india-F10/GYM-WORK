@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM site</title>
+    <script src="http://fa.test:8443/1234abcdef.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="sport.css">
+</head>
+
+<body>
+    <section class="section1">
+        <div class="container">
+            <div class="logo-container">
+                <img src=".\src\gym space.jpg" alt="">
+            </div>
+            <h1>EXPERIENCE WELLNESS AND LUXURY</h1>
+            <p>Redifining fitness, inspiring wellness</p>
+        </div>
+    </section>
+    <section class="carousel" id="container">
+        <div class="container-images" id="track">
+
+            <img src=".\src\ten.jpg" alt="">
+
+            <img src=".\src/yoga 1.jpg" alt="">
+
+            <img src=".\src\Yoga.jpg" alt="">
+
+
+
+            <img src=".\src\one.jpg" alt="">
+
+            <img src=".\src\ten.jpg" alt="">
+
+
+            <img src=".\src/Yoga 1.jpg" alt="">
+
+
+            <img src=".\src/one.jpg" alt="">
+
+
+
+            <img src=".\src/Yoga.jpg" alt="">
+
+
+
+        </div>
+
+        <script>
+            const track = document.getElementById('track');
+            const track = document.getElementById('container');
+
+            track.innerHTML += track.innerHTML;
+
+            let position = 0;
+            const speed = 1;
+            let isPaused = false;
+
+            container.addEventListener('mouseenter', () => {
+                isPaused = true;
+            });
+            container.addEventListener('mouseenter', () => {
+                isPaused = false;
+            });
+
+            function animate() {
+                if (!isPaused) {
+                    position -= speed;
+
+                    const halfWidth = track.scrollWidth / 2;
+
+                    if (Math.abs(position) >= halfwidth) {
+                        position = 0;
+                    }
+                    track.style.transform = 'translateX(${position}px)';
+                }
+                requestAnimationFrame(animate);
+            }
+            Window.addEventListener('load', () => {
+                requestAnimationFrame(animate);
+            });
+        </script>
+
+
+    </section>
+    <section class="section3">
+        <div class="founder-bio">
+            <img src=".\src\foundator.jpg" alt="">
+            <h2>AM JOHNSON (The founder of GYM SPACE):Our gym enterprise was established to promote health,fitness,and well-being in the community.It began as a small fitness center with a vision to help people achieve healthier lifestyles.With dedication
+                and hardwork,wwe gradually expanded our facilities and services.We introduced modern gym equipment,professional coaching,and personalized training programs.Our experienced trainers guide members in achieving goals such as weight loss,muscle
+                building and fitness improvement.We also provide nutrition advice to support healthy living.Over the years,our commitment to quality services has earned the trust of many members.We believe that fitness is for everyone,regardless of age
+                or experience.Today,our gym is a friendly and motivating environment where people work together to become healthier and stronger.We continue to grow by improving our service,innovating and inspiring our community to live an active and
+                balanced lives.
+            </h2>
+        </div>
+
+        <div class="coach-tech" id="maduka">
+            <img src=".\src\téléchargement.webp" alt="">
+            <p>This is our muscular coach who is incharge of designing personalised strenghth-training. teaches proper exercise techniques to prevent injuries. Motivate to achieve their fitness goals.Monitoring progress and adjust workout plans when needed.Provides
+                advice on nutrition and healthy lifestyle habits. Ensures a safety,effective,and training environment.</p>
+
+        </div>
+
+
+        <div class="coach-fit">
+            <img src=".\src\FITNESS.jpg" alt="">
+            <p>Creates personalised weight-loss and fat-burning exercise,and body-toning workout plans.Guides clients through cardio and fat burning exercise.Advices on balanced nutrition and healthy eating habits.Monitors body measurements and tracks progress.Motivates
+                clients to stay consistent and reach their fitness goal.Teaches proper exercise techniques to avoid injuries.Promotes a healthy,active lifestyle long-term results.
+            </p>
+        </div>
+
+        <div class="coach-pro">
+            <img src=".\src\pro.webp" alt="">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur excepturi deleniti est maiores distinctio, corporis officia commodi praesentium sed tempora ea aut deserunt, quia sint delectus dicta nisi magnam dignissimos.</p>
+        </div>
+        <section class="testimonial">
+            <h3>Member Testimonial</h3>
+
+            <div class="testimonial-card">
+                <img src=".\src\member.jpg" alt="Member">
+
+                <p class="message">
+                    "joining GYMSPACE changed my life.I lost 15kg in 4months,gained confidence,and achieved my fitness goals thanks to the amazing coaches the nutrition advice helped me lose 18kg in only 5months. my strength,confidence,and overall health have completely
+                    changed.I highly recomend GYMSPACE to anyone who wants real results!"
+                </p>
+                <div>
+                    <h4>john williams</h4>
+                </div>
+                <span>member for two years</span>
+                <div class="stars">
+
+                </div>
+                <div class="progress">
+
+                    <h4>Before</h4>
+                    <span>95kg</span>
+                </div>
+                <div>
+                    <h4>After 5months</h4>
+                    <span>77kg</span>
+
+                </div>
+            </div>
+            <div class="contact">
+
+                <a href="/index.html">info@gymspace.com</a>
+            </div>
+            </div>
+        </section>
+    </section>
+
+
+</body>
+
+</html>

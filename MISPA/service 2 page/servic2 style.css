@@ -1,0 +1,866 @@
+/* ===========================
+   GENERAL RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#111;
+    color:white;
+}
+
+/* ===========================
+   NAVIGATION BAR
+=========================== */
+
+.navbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:5px 5%;
+
+    background:#4a000045;
+
+    border-bottom:2px solid #ffb6c1;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:100;
+
+}
+
+/* Logo */
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.logo img{
+
+    width:350px;
+
+    margin-right:25px;
+
+}
+
+.logo h2{
+
+    color:#ffb6c1;
+
+    font-size:48px;
+
+}
+
+/* Navigation */
+
+.nav-links{
+
+    display:flex;
+
+    list-style:none;
+
+}
+
+.nav-links li{
+
+    margin:0 10px;
+
+}
+
+.nav-links li a{
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:28px;
+
+    transition:.4s;
+
+}
+
+.nav-links li a:hover{
+
+    color:#ffb6c1;
+
+}
+
+/* Join Button */
+
+.join-btn{
+
+    text-decoration:none;
+
+    background:#ffb6c1;
+
+    color:#111;
+
+    padding:12px 2px;
+ 
+    border-radius:15px;
+
+    font-weight:bold;
+
+    transition:.4s;
+
+}
+
+.join-btn:hover{
+
+    background:white;
+
+    color:#111;
+
+}
+
+/* ===========================
+   HERO SECTION
+=========================== */
+
+.hero{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:80px 8%;
+
+    background:linear-gradient(135deg,#111,#2a1b24);
+
+    min-height:90vh;
+
+    gap:50px;
+
+}
+
+/* Left Side */
+
+.hero-content{
+
+    flex:1;
+
+}
+
+.hero-content h1{
+
+    font-size:60px;
+
+    color:#ffb6c1;
+
+    margin-bottom:25px;
+
+    line-height:1.2;
+
+}
+
+.hero-content p{
+
+    font-size:20px;
+
+    color:#ddd;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+/* Buttons */
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.btn1{
+
+    background:#ffb6c1;
+
+    color:#111;
+
+    padding:15px 35px;
+
+    text-decoration:none;
+
+    border-radius:40px;
+
+    font-weight:bold;
+
+    transition:.4s;
+
+}
+
+.btn1:hover{
+
+    background:white;
+
+}
+
+.btn2{
+
+    border:2px solid #ffb6c1;
+
+    color:#ffb6c1;
+
+    padding:15px 35px;
+
+    text-decoration:none;
+
+    border-radius:40px;
+
+    transition:.4s;
+
+}
+
+.btn2:hover{
+
+    background:#ffb6c1;
+
+    color:#111;
+
+}
+
+/* Right Side */
+
+.hero-image{
+
+    flex:1;
+
+    text-align:center;
+
+}
+
+.hero-image img{
+
+    width:100%;
+
+    max-width:600px;
+
+    border-radius:25px;
+
+    box-shadow:0 0 30px rgba(255,182,193,.5);
+
+}
+
+/* Video */
+
+.hero-image video{
+
+    width:200%;
+
+    max-width:60px;
+
+    border-radius:30px;
+
+    box-shadow:0 0 30px rgba(255,182,193,.5);
+
+}
+
+/* ===========================
+   WHY CHOOSE US
+=========================== */
+
+.why-us{
+
+    background:#181818;
+
+    padding:80px 8%;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+}
+
+.section-title h2{
+
+    color:#ffb6c1;
+
+    font-size:42px;
+
+    margin-bottom:15px;
+
+}
+
+.section-title p{
+
+    color:#ddd;
+
+    font-size:18px;
+
+}
+
+.why-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+.why-card{
+
+    background:#242424;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    transition:.4s;
+
+    border:2px solid transparent;
+
+}
+
+.why-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#ffb6c1;
+
+    box-shadow:0 0 20px rgba(255,182,193,.4);
+
+}
+
+.why-card img{
+
+    width: 300px;
+
+    height:250px;
+
+    object-fit:cover;
+
+    margin-bottom:20px;
+
+}
+
+.why-card h3{
+
+    color:#ffb6c1;
+
+    margin-bottom:15px;
+
+    font-size:24px;
+
+}
+
+.why-card p{
+
+    color:#ddd;
+
+    line-height:1.7;
+
+}
+
+/* ===========================
+   OUR SERVICES
+=========================== */
+
+.services{
+    background:#111;
+    padding:90px 8%;
+}
+
+.services-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+.service-card{
+
+    background:#1f1f1f;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    transition:.4s;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.4);
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 0 25px rgba(255,182,193,.5);
+
+}
+
+.service-card img{
+
+    width:100%;
+
+    height:230px;
+
+    object-fit:cover;
+
+}
+
+.service-card h3{
+
+    color:#ffb6c1;
+
+    margin:20px;
+
+    font-size:26px;
+
+}
+
+.service-card p{
+
+    color:#ddd;
+
+    margin:0 20px 25px;
+
+    line-height:1.7;
+
+}
+
+.service-card a{
+
+    display:inline-block;
+
+    margin:0 20px 25px;
+
+    padding:12px 28px;
+
+    background:#ffb6c1;
+
+    color:#111;
+
+    text-decoration:none;
+
+    border-radius:30px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.service-card a:hover{
+
+    background:white;
+
+}
+
+/* ===========================
+   SPORTS & ACTIVITIES
+=========================== */
+
+.activities{
+    background:#181818;
+    padding:90px 8%;
+}
+
+.activities-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.activity-card{
+    background:#222;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.4s;
+    box-shadow:0 8px 20px rgba(0,0,0,.4);
+}
+
+.activity-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px rgba(255,182,193,.5);
+}
+
+.activity-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.activity-card h3{
+    color:#ffb6c1;
+    margin:20px;
+    font-size:24px;
+}
+
+.activity-card p{
+    color:#ddd;
+    margin:0 20px 25px;
+    line-height:1.7;
+}
+
+/* ===========================
+   SPORTS STORE
+=========================== */
+
+.store{
+    background:#111;
+    padding:90px 8%;
+}
+
+.store-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.product-card{
+    background:#1f1f1f;
+    border-radius:20px;
+    overflow:hidden;
+    text-align:center;
+    transition:.4s;
+    box-shadow:0 8px 20px rgba(0,0,0,.4);
+}
+
+.product-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px rgba(255,182,193,.5);
+}
+
+.product-card img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+}
+
+.product-card h3{
+    color:#ffb6c1;
+    margin:15px 0 10px;
+    font-size:24px;
+}
+
+.product-card p{
+    color:#ddd;
+    padding:0 20px;
+    line-height:1.6;
+}
+
+.product-card h4{
+    color:white;
+    margin:15px 0;
+    font-size:22px;
+}
+
+.product-card a{
+    display:inline-block;
+    margin-bottom:25px;
+    padding:12px 30px;
+    background:#ffb6c1;
+    color:#111;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.product-card a:hover{
+    background:white;
+}
+
+/* ===========================
+   RESTAURANT & NUTRITION
+=========================== */
+
+.restaurant{
+    background:#181818;
+    padding:90px 8%;
+}
+
+.restaurant-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.food-card{
+    background:#242424;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.4s;
+    box-shadow:0 8px 20px rgba(0,0,0,.4);
+}
+
+.food-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px rgba(255,182,193,.5);
+}
+
+.food-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.food-card h3{
+    color:#ffb6c1;
+    margin:20px;
+    font-size:24px;
+}
+
+.food-card p{
+    color:#ddd;
+    margin:0 20px 25px;
+    line-height:1.7;
+}
+
+/* ===========================
+   RECOVERY & WELLNESS
+=========================== */
+
+.wellness{
+    background:#111;
+    padding:90px 8%;
+}
+
+.wellness-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.wellness-card{
+    background:#1f1f1f;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.4s;
+    box-shadow:0 8px 20px rgba(0,0,0,.4);
+}
+
+.wellness-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px rgba(255,182,193,.5);
+}
+
+.wellness-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.wellness-card h3{
+    color:#ffb6c1;
+    margin:20px;
+    font-size:24px;
+}
+
+.wellness-card p{
+    color:#ddd;
+    margin:0 20px 25px;
+    line-height:1.7;
+}
+
+/*================ PHOTO GALLERY ================*/
+
+.gallery{
+    background:#181818;
+    padding:90px 8%;
+}
+
+.gallery-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:20px;
+
+}
+
+.gallery-item{
+
+    overflow:hidden;
+
+    border-radius:18px;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+}
+
+.gallery-item img{
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.gallery-item:hover img{
+
+    transform:scale(1.1);
+
+}
+
+.gallery-item:hover{
+
+    box-shadow:0 0 25px rgba(255,182,193,.5);
+
+}
+
+/*================ VIDEO GALLERY ================*/
+
+.video-gallery{
+    background:#111;
+    padding:90px 8%;
+}
+
+.video-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.video-card{
+    background:#1f1f1f;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.4s;
+    box-shadow:0 8px 20px rgba(0,0,0,.4);
+}
+
+.video-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px rgba(255,182,193,.5);
+}
+
+.video-card video{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.video-card h3{
+    color:#ffb6c1;
+    margin:20px;
+    font-size:24px;
+}
+
+.video-card p{
+    color:#ddd;
+    margin:0 20px 25px;
+    line-height:1.7;
+}
+
+/*================ OUR TRAINERS ================*/
+
+.trainers{
+    background:#181818;
+    padding:90px 8%;
+}
+
+.trainers-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:30px;
+}
+
+.trainer-card{
+    background:#242424;
+    border-radius:20px;
+    overflow:hidden;
+    text-align:center;
+    transition:.4s;
+    box-shadow:0 8px 20px rgba(0,0,0,.4);
+}
+
+.trainer-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px rgba(255,182,193,.5);
+}
+
+.trainer-card img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+}
+
+.trainer-card h3{
+    color:#ffb6c1;
+    margin-top:20px;
+    font-size:28px;
+}
+
+.trainer-card h4{
+    color:#ffffff;
+    margin:10px 20px;
+    font-size:18px;
+}
+
+.trainer-card p{
+    color:#ddd;
+    margin:15px 20px;
+    line-height:1.7;
+}
+
+.social-icons{
+    margin:20px 0;
+}
+
+.social-icons a{
+    color:#ffb6c1;
+    font-size:22px;
+    margin:0 10px;
+    transition:.3s;
+}
+
+.social-icons a:hover{
+    color:white;
+}
+
+.book-btn{
+    display:inline-block;
+    margin-bottom:25px;
+    padding:12px 30px;
+    background:#ffb6c1;
+    color:#111;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.book-btn:hover{
+    background:white;
+}
